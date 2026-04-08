@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------- */
+/* CSS Customizado para o Infográfico EduSchedule Dark  */
+/* ---------------------------------------------------- */
+
+body {
+  /* Garante que o fundo da página inteira combina com o componente */
+  background-color: #1e1e24; 
+}
+
+/* Efeito Glassmorphism para a caixa de informações lateral */
+.edu-glass-panel {
+  background: rgba(30, 30, 44, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Estilização do Slider (Data Flow) para o Dark Theme */
+.edu-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  width: 150px;
+}
+
+.edu-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 8px;
+  border-radius: 4px;
+  background: #818cf8; /* Cor indigo do Tailwind */
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.edu-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #3f3f46;
+  border-radius: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #0d0e15;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #818cf8;
+}

@@ -1,0 +1,32 @@
+/* Efeito Glassmorphism para a caixa de informações */
+.edu-glass-panel {
+  background: rgba(30, 30, 44, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Estilização do Slider nativo do HTML para o Dark Theme */
+.edu-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  width: 150px;
+}
+
+.edu-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 8px;
+  border-radius: 4px;
+  background: #818cf8; /* Cor indigo do Tailwind */
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.edu-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #3f3f46;
+  border-radius: 2px;
+}
